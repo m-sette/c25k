@@ -40,18 +40,22 @@ function App() {
                     Week {program.week}, Day {program.day}
                 </h2>
             )}
-            <SelectForm handleDayPicker={handleDayPicker} />
-            <ul>
-                {program &&
-                    program.steps.map((step, index) => {
-                        console.log(step);
-                        return (
-                            <li key={index}>{`${step.pace} - ${
-                                step.time / 60_000
-                            }min`}</li>
-                        );
-                    })}
-            </ul>
+            {start && (
+                <>
+                    <SelectForm handleDayPicker={handleDayPicker} />
+                    <ul>
+                        {program &&
+                            program.steps.map((step, index) => {
+                                console.log(step);
+                                return (
+                                    <li key={index}>{`${step.pace} - ${
+                                        step.time / 60_000
+                                    }min`}</li>
+                                );
+                            })}
+                    </ul>
+                </>
+            )}
         </div>
     );
 }

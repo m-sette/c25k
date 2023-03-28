@@ -46,6 +46,7 @@ const Timer = ({ init, setStart }) => {
                 {' '}
                 {isRunning ? 'Pause' : 'Resume'}
             </button>
+            <button onClick={() => setStart(true)}>Stop</button>
         </section>
     );
 };
