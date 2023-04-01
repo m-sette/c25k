@@ -1,6 +1,7 @@
 .timer {
-    border: 1px solid black;
-    width: 25rem;
+    border: 1px dashed #646cff;
+    border-radius: 20px;
+    min-width: 16rem;
     height: 15rem;
 }
 

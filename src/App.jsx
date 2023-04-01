@@ -43,7 +43,7 @@ function App() {
             {start && (
                 <>
                     <SelectForm handleDayPicker={handleDayPicker} />
-                    <ul>
+                    <ul className='program-list'>
                         {program &&
                             program.steps.map((step, index) => {
                                 console.log(step);

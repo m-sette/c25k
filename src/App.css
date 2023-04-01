@@ -5,3 +5,11 @@
   text-align: center;
 }
 
+.program-list {
+  list-style: none;
+  text-align: start;
+}
+
+.program-list li {
+  margin-left: 5rem;
+}
